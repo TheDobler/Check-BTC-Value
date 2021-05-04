@@ -94,7 +94,7 @@ while (True):
         if (firstTime < secondTime and firstvalue <= secondvalue):
             diffvalue = float(secondvalue) - float(firstvalue)
             print(f"Bitcoin value has increased by ${diffvalue}")
-            sound()  # Plays a song when the BTC increases. Artist/song is: Napalm Death / You Suffer
+            sound()  # Plays a song when the BTC increases.
             firstTime = secondTime
             firstvalue = secondvalue
         else:
