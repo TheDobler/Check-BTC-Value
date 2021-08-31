@@ -9,7 +9,8 @@ import time
 
 def sound():
     # What song you want to play when BTC increases.
-    playsound('')  # add the name of the mp3 file here
+    # add the name of the mp3 file here
+    playsound('')
 
 
 url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
@@ -94,7 +95,7 @@ while (True):
         if (firstTime < secondTime and firstvalue <= secondvalue):
             diffvalue = float(secondvalue) - float(firstvalue)
             print(f"Bitcoin value has increased by ${diffvalue}")
-            sound()  # Plays a song when the BTC increases. Artist/song is: Napalm Death / You Suffer
+            sound()  # Plays a song when the BTC increases.
             firstTime = secondTime
             firstvalue = secondvalue
         else:
